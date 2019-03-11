@@ -1,6 +1,6 @@
 # zemoga
 IDE:
-Zemoga.xcworkspace was created using xcode 10.1
+Zemoga was created using xcode 10.1 please open the workspace "Zemoga.xcworkspace"
 
 Proposed Architecture:
 this project have a basic MVC architecture as a base, but many "helpers" try to organize each operation using on models, views or controlles; in group "Others" I always include animation files, fetch files to do models operations, to define constants, do extensions and others, always to separate the logic of each functionality, easily to understand and maintain.
