@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTVC" rowHeight="179" id="nXt-HN-MF5" customClass="PostTableViewCell" customModule="Zemoga" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXt-HN-MF5" id="zRl-hL-DOG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oh1-YD-LOG">
+                        <rect key="frame" x="21" y="48.5" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="PcU-yq-pEq"/>
+                            <constraint firstAttribute="width" constant="15" id="h9y-Te-i7l"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_p" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-TP-N1F">
+                        <rect key="frame" x="13.5" y="41" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="saS-Mg-JwU"/>
+                            <constraint firstAttribute="width" constant="30" id="u3e-Jc-kyd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdZ-KH-xkv">
+                        <rect key="frame" x="51" y="5" width="268" height="101.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more" translatesAutoresizingMaskIntoConstraints="NO" id="8if-vX-Bfg">
+                        <rect key="frame" x="329" y="46" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="I67-tV-Zjn"/>
+                            <constraint firstAttribute="height" constant="20" id="omk-1u-ELD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c1a-TP-N1F" firstAttribute="centerX" secondItem="Oh1-YD-LOG" secondAttribute="centerX" id="2xy-q0-JPp"/>
+                    <constraint firstItem="TdZ-KH-xkv" firstAttribute="top" secondItem="zRl-hL-DOG" secondAttribute="top" constant="5" id="36O-oo-tO5"/>
+                    <constraint firstItem="Oh1-YD-LOG" firstAttribute="centerY" secondItem="zRl-hL-DOG" secondAttribute="centerY" id="9HD-1D-5Wj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8if-vX-Bfg" secondAttribute="trailing" constant="10" id="Bns-LF-SkQ"/>
+                    <constraint firstItem="Oh1-YD-LOG" firstAttribute="leading" secondItem="zRl-hL-DOG" secondAttribute="leadingMargin" constant="5" id="EdI-Hh-3FG"/>
+                    <constraint firstItem="8if-vX-Bfg" firstAttribute="leading" secondItem="TdZ-KH-xkv" secondAttribute="trailing" constant="10" id="Fag-hK-AFC"/>
+                    <constraint firstAttribute="bottom" secondItem="TdZ-KH-xkv" secondAttribute="bottom" constant="5" id="KZI-p6-AJT"/>
+                    <constraint firstItem="c1a-TP-N1F" firstAttribute="centerY" secondItem="Oh1-YD-LOG" secondAttribute="centerY" id="Z4B-DG-jCq"/>
+                    <constraint firstItem="8if-vX-Bfg" firstAttribute="centerY" secondItem="zRl-hL-DOG" secondAttribute="centerY" id="cmx-me-XiW"/>
+                    <constraint firstItem="TdZ-KH-xkv" firstAttribute="leading" secondItem="Oh1-YD-LOG" secondAttribute="trailing" constant="15" id="faX-tv-FZg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="TdZ-KH-xkv" id="GR7-lQ-deQ"/>
+                <outlet property="starView" destination="c1a-TP-N1F" id="N4x-DI-qI3"/>
+                <outlet property="unReadIndicator" destination="Oh1-YD-LOG" id="OcI-rl-PdD"/>
+            </connections>
+            <point key="canvasLocation" x="188" y="70.164917541229386"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more" width="383.7525634765625" height="383.7525634765625"/>
+        <image name="star_p" width="14" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+use_frameworks!
+
+def shared_pods
+        pod 'AFNetworking'
+	pod 'SwiftLint'
+end
+
+target 'Zemoga' do
+	shared_pods
+end

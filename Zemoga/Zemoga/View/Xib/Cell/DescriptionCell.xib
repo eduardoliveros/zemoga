@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailTVC" rowHeight="89" id="eku-B4-1UW" customClass="DescriptionTableViewCell" customModule="Zemoga" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eku-B4-1UW" id="XgD-YZ-5uX">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tt-71-xAP">
+                        <rect key="frame" x="26" y="21" width="331" height="19"/>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfS-Be-3oQ">
+                        <rect key="frame" x="26" y="50" width="331" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="VfS-Be-3oQ" secondAttribute="bottom" constant="10" id="DRR-Pi-NPH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VfS-Be-3oQ" secondAttribute="trailing" constant="10" id="Dak-xf-WyG"/>
+                    <constraint firstItem="5tt-71-xAP" firstAttribute="top" secondItem="XgD-YZ-5uX" secondAttribute="topMargin" constant="10" id="KON-Cs-MHG"/>
+                    <constraint firstItem="VfS-Be-3oQ" firstAttribute="leading" secondItem="XgD-YZ-5uX" secondAttribute="leadingMargin" constant="10" id="QKd-Cv-wYc"/>
+                    <constraint firstItem="5tt-71-xAP" firstAttribute="leading" secondItem="XgD-YZ-5uX" secondAttribute="leadingMargin" constant="10" id="kJC-OM-Ldb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5tt-71-xAP" secondAttribute="trailing" constant="10" id="yRt-fY-hfh"/>
+                    <constraint firstItem="VfS-Be-3oQ" firstAttribute="top" secondItem="5tt-71-xAP" secondAttribute="bottom" constant="10" id="zxM-hk-GJF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="VfS-Be-3oQ" id="tRJ-v6-h8x"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="174.06296851574214"/>
+        </tableViewCell>
+    </objects>
+</document>
