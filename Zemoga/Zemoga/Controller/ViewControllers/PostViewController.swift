@@ -15,7 +15,7 @@ class PostViewController: UIViewController {
     let nonReadPosts = 20
     //    Variables:
     var postsArray: [Post] = []
-    var array: [Post] = []
+    var array: [Post] = Post.getAll() ?? []
     var reloadData: Bool = false
     //    Outlets:
     @IBOutlet weak var tableView: UITableView!

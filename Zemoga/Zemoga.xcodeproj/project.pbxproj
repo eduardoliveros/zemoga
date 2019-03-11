@@ -14,7 +14,7 @@
 		A0CCB4A92233600E003C0B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CCB4A72233600E003C0B71 /* Main.storyboard */; };
 		A0CCB4AB22336011003C0B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CCB4AA22336011003C0B71 /* Assets.xcassets */; };
 		A0CCB4AE22336011003C0B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CCB4AC22336011003C0B71 /* LaunchScreen.storyboard */; };
-		A0CCB4B922336011003C0B71 /* ZemogaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCB4B822336011003C0B71 /* ZemogaTests.swift */; };
+		A0CCB4B922336011003C0B71 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCB4B822336011003C0B71 /* ExtensionsTests.swift */; };
 		A0CCB4C922336552003C0B71 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CCB4C822336552003C0B71 /* DetailViewController.swift */; };
 		A0CCB4CB2233656A003C0B71 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CCB4CA2233656A003C0B71 /* PostCell.xib */; };
 		A0CCB4CD22336588003C0B71 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CCB4CC22336588003C0B71 /* CommentCell.xib */; };
@@ -60,7 +60,7 @@
 		A0CCB4AD22336011003C0B71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0CCB4AF22336011003C0B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CCB4B422336011003C0B71 /* ZemogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0CCB4B822336011003C0B71 /* ZemogaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaTests.swift; sourceTree = "<group>"; };
+		A0CCB4B822336011003C0B71 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		A0CCB4BA22336011003C0B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CCB4C822336552003C0B71 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A0CCB4CA2233656A003C0B71 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
@@ -157,6 +157,28 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A09E79322236076D00AAEA05 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A0CCB4B822336011003C0B71 /* ExtensionsTests.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A09E79332236077700AAEA05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A09E79342236078900AAEA05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A0CCB4972233600E003C0B71 = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +214,9 @@
 		A0CCB4B722336011003C0B71 /* ZemogaTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0CCB4B822336011003C0B71 /* ZemogaTests.swift */,
+				A09E79342236078900AAEA05 /* Model */,
+				A09E79332236077700AAEA05 /* Controller */,
+				A09E79322236076D00AAEA05 /* Other */,
 				A0CCB4BA22336011003C0B71 /* Info.plist */,
 			);
 			path = ZemogaTests;
@@ -463,7 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CCB4B922336011003C0B71 /* ZemogaTests.swift in Sources */,
+				A0CCB4B922336011003C0B71 /* ExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
